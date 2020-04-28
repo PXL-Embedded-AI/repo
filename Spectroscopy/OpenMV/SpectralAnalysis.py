@@ -33,7 +33,4 @@ while(True):
         spectrum.x1 - spectrum.x0,
         spectrum.y3 - spectrum.y0,
         color = (255, 255, 255), thickness = 1, fill = False)
-    for s_y in range(spectrum.y0, spectrum.y3):
-        for s_x in range(spectrum.x0, spectrum.x1):
-            img.snapshot()
 
