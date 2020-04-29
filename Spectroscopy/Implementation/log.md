@@ -1,11 +1,10 @@
-Vis Spectroscopie van vloeistoffen: implementatie op basis van het theoretisch onderzoek issue #24
+# Vis Spectroscopie van vloeistoffen: implementatie op basis van het theoretisch onderzoek issue #24
 
 Testmodel Vis Spectroscopie
 Design, constructie en implementatie door: Eduardo L. Bemelmans
 Onderwerp: Spectroscopie van vloeistoffen binnen het visueel spectrum: implementatie, ontwerp, constructie en labo.
 
-10/04
-Constructie spectroscopiemeter
+# Constructie spectroscopiemeter 10/04
 
 Gebruikt materiaal:
 - MDF
@@ -34,7 +33,6 @@ Extra benodigdheden:
 - Tissues
 
 
-
 De openMV camera werd gemonteerd op een MDF plaatje. Deze dient als draagblok en werd gemonteerd op de basis MDF plaat. De MDF platen zijn op maat gezaagd. De openMV heeft twee mounting holes, waardoor het schuin op het draagblokje zit. Dit geeft geen problemen verder, maar de PCB van de openMV camera is nu eenmaal op deze wijze geconstrueerd.
 
 ![IMG_20200410_165109432](https://user-images.githubusercontent.com/48355782/80476565-d9083380-894a-11ea-8921-5d4775ae7d89.jpg)
@@ -57,11 +55,10 @@ Deze assembly werd daarna in een gewone kartonnen doos geplaatst. Daarna werd er
 
 ![IMG_20200428_142235132](https://user-images.githubusercontent.com/48355782/80487401-06f67380-895d-11ea-8128-7ba4da74d0d9.jpg)
 
-Conclusie deel 1:
+## Conclusie deel 1:
 De doos heldert teveel mee op waardoor de resultaten teleurstellend zijn. Er moet een nieuwe doos ontwikkeld worden. 
 
-25/04 tot en met 26/04
-Upgrade 1 spectroscopie meter:
+# Upgrade 1 spectroscopie meter 25/04
 
 De kartonnen doos werd vervangen door een schoenendoos. Deze werd zwart gesprayed met spuitlak. Deze is echter glanzend, waardoor het licht nog steeds gaat reflecteren. 
 
@@ -112,16 +109,38 @@ Davidoff coolwater parfum fles
 
 ![IMG_20200428_153752527](https://user-images.githubusercontent.com/48355782/80494346-df0c0d80-8966-11ea-9322-814c253e64ab.jpg)
 
-Future work:
+## Future work
 
 De lichtbron moet vastgemaakt worden aan de doos zodanig dat het spectrum zich meteen juist toont. Nu is de positie van de lichtbron variabel waardoor het spectrum van intensiteit veranderd. Als de lichtintensiteit te groot wordt, licht de inhoud van de doos mee op. De doos reflecteert nog vanwege de glanzende lak. De rode PCB van de camera is ook zichtbaar als de lichtintensiteit te sterk is. 
 
 Conclusie na de upgrades:
 De resultaten zijn bevredigend, maar nog niet volledig juist. De implementatie is voldoende geslaagd om het project verder te zetten. De resultaten tonen aan dat Vis spectroscopie van een vloeistof plausibel is met minimalistisch materiaal.
 
+# Upgrade 2 spectroscopie meter 29/04
 
+Extra verduisterende elementen werden vandaag aangebracht aan het ontwerp (zie onderstaande afbeeldingen).
 
+![alt text](https://raw.githubusercontent.com/PXL-Embedded-AI/repo/master/Spectroscopy/Implementation/images/IMG_20200429_130545446.jpg)
 
+![alt text](https://raw.githubusercontent.com/PXL-Embedded-AI/repo/master/Spectroscopy/Implementation/images/IMG_20200429_130016660.jpg)
+
+![alt text](https://raw.githubusercontent.com/PXL-Embedded-AI/repo/master/Spectroscopy/Implementation/images/IMG_20200429_151600784.jpg)
+
+![alt text](https://raw.githubusercontent.com/PXL-Embedded-AI/repo/master/Spectroscopy/Implementation/images/IMG_20200429_163204060.jpg)
+
+De reflectie is nog steeds aanwezig, maar in mindere mate:
+
+![alt text](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/Implementation/images/openMV-upgrade2-3.png)
+
+![alt text](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/Implementation/images/openMV-upgrade2-3.png)
+
+## Conclusie
+
+Extra verduisterende elementen zorgen voor minder reflectie binnen de doos. 
+
+## Future work
+
+Op zoek gaan naar een permanente oplossing voor de lichtbron. Waarschijnlijk wordt dit een halogeen G4 lamp dat vast gemonteerd wordt aan de doos. De lamp kan ook gemonteerd worden op een statief. Het licht kan geleid worden via een optic fiber cale. Dit kan ook een interessant alternatief zijn, maar dit neemt meer ruimte in.
 
 
 
