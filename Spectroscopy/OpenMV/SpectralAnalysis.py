@@ -34,3 +34,6 @@ while(True):
         spectrum.y3 - spectrum.y0,
         color = (255, 255, 255), thickness = 1, fill = False)
 
+# Histogram van spectrum, JSON file naar PC
+# Meerdere spectra
+# Fixed opstelling van de lichtbron
