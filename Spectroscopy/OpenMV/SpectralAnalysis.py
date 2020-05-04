@@ -49,3 +49,4 @@ for i in range(256):
     f.write(jsonData)
     f.write("\n")
 f.close()
+pyb.hard_reset()
