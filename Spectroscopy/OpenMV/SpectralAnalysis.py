@@ -1,6 +1,8 @@
 # Spectral analysis - By: Eduardo L. Bemelmans - Tue Apr 28 2020
 
-import sensor, image, time, pyb, json
+import sensor, image, time, pyb, json, os
+
+print(os.getcwd())
 
 sensor.reset()
 sensor.set_pixformat(sensor.RGB565)
@@ -27,7 +29,8 @@ clock = time.clock()
 
 spectrum = spectroscopy(90, 145, 215, 145, 215, 170, 90, 170)
 
-while(True):
+f=open('spectrumHistogram.json','w')
+for i in range(256):
     clock.tick()
     img = sensor.snapshot()
     # print(clock.fps())
@@ -38,10 +41,11 @@ while(True):
     spctrHistogram = img.get_histogram(bins=8, roi=(spectrum.x0, spectrum.y0,
         spectrum.x1 - spectrum.x0,
         spectrum.y3 - spectrum.y0))
-    print(spctrHistogram)
+    # print(spctrHistogram)
+    Data = spctrHistogram
 
-
-# Histogram van spectrum: done
-# JSON file naar PC: todo
-# Meerdere spectra: todo
-# Fixed opstelling van de lichtbron: G4 halogen lamp on order
+    jsonData = json.dumps(spctrHistogram)
+    print(jsonData)
+    f.write(jsonData)
+    f.write("\n")
+f.close()
