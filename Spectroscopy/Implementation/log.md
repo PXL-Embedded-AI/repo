@@ -134,9 +134,20 @@ De reflectie is nog steeds aanwezig, maar in mindere mate:
 
 ![alt text](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/Implementation/images/openMV-upgrade2-3.png)
 
+# Upgrade 3 spectroscopie meter 05/05
+
+Een constante lichtbron werd vandaag geconstrueerd. Een breadboard met een G4 halogeen lamp (12VDC) kleeft vast aan de schoenendoos. Een breadboard maakt het mogelijk om de plaats van de lamp te moduleren (meer naar links/rechts en/of meer naar voor/achter). De kleefstof van het breadboard blijkt stand te houden. De resultaten zijn te zien in de volgende afbeeldingen.
+
+![alt text](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/Implementation/images/IMG_20200505_222146520.jpg)
+
+![alt text](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/Implementation/images/IMG_20200505_222151877.jpg)
+
+![alt text](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/Implementation/images/openMV-Halogen-12VDC.png)
+
+
 ## Conclusie
 
-Extra verduisterende elementen zorgen voor minder reflectie binnen de doos. 
+Extra verduisterende elementen zorgen voor minder reflectie binnen de doos. Een constante lichtbron is een must zodat het spectrum constant blijft. De halogeenlamp geeft ook een volledig spectrum terug, in tegenstelling tot de LED van de gsm. Een CD diffraction grating schiet tekort ten opzichte van een linear diffraction grating card. 
 
 ## Future work
 
