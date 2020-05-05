@@ -27,10 +27,10 @@ class spectroscopy:
 
 clock = time.clock()
 
-spectrum = spectroscopy(90, 145, 215, 145, 215, 170, 90, 170)
+spectrum = spectroscopy(90, 145, 220, 145, 220, 170, 90, 170)
 
 f=open('spectrumHistogram.json','w')
-for i in range(256):
+for i in range(8):
     clock.tick()
     img = sensor.snapshot()
     # print(clock.fps())
@@ -41,7 +41,7 @@ for i in range(256):
     spctrHistogram = img.get_histogram(bins=8, roi=(spectrum.x0, spectrum.y0,
         spectrum.x1 - spectrum.x0,
         spectrum.y3 - spectrum.y0))
-    # print(spctrHistogram)
+    print(spctrHistogram)
     Data = spctrHistogram
 
     jsonData = json.dumps(spctrHistogram)
