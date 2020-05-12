@@ -30,8 +30,11 @@ clock = time.clock()
 spectrum = spectroscopy(90, 145, 220, 145, 220, 170, 90, 170)
 
 f=open('spectrumHistogram.json','w')
-for i in range(8):
+f.write('[\n')
+limit = 10
+for i in range(limit):
     clock.tick()
+    f.write('{\"spectrum\":%d,\"binaries\":' % i)
     img = sensor.snapshot()
     # print(clock.fps())
     spctrArea = img.draw_rectangle(spectrum.x0, spectrum.y0,
@@ -47,6 +50,13 @@ for i in range(8):
     jsonData = json.dumps(spctrHistogram)
     print(jsonData)
     f.write(jsonData)
-    f.write("\n")
+    f.write('}')
+    if (i is not limit-1):
+        f.write(',')
+        f.write('\n')
+f.write('\n')
+f.write(']')
 f.close()
 pyb.hard_reset()
+# RGB: Space, assen definiëren
+# Serial data
