@@ -34,7 +34,7 @@ f.write('[\n')
 limit = 10
 for i in range(limit):
     clock.tick()
-    f.write('{\"spectrum\":%d,\"binaries\":' % i)
+    f.write('{\"snapshot\":%d,\"binaries\":' % i)
     img = sensor.snapshot()
     # print(clock.fps())
     spctrArea = img.draw_rectangle(spectrum.x0, spectrum.y0,
