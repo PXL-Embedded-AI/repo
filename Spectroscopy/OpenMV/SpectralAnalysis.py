@@ -45,7 +45,6 @@ for i in range(limit):
         spectrum.x1 - spectrum.x0,
         spectrum.y3 - spectrum.y0))
     print(spctrHistogram)
-    Data = spctrHistogram
 
     jsonData = json.dumps(spctrHistogram)
     print(jsonData)
