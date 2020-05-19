@@ -1,5 +1,5 @@
 import json, time
-    
+
 print('JSON file contents:')
 
 with open('D:\spectrumHistogram.json', 'r') as f_json:
