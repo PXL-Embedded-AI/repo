@@ -42,7 +42,6 @@ Het [spectral analysis python script](https://github.com/PXL-Embedded-AI/repo/bl
 
 ```
 Limit = 10
-# er worden nu 10 snapshots genomen
 ```
 De PC kan de histrogrammen ophalen van elk spectrum met de [JSON read code](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/OpenMV/jsonread.py).
 
