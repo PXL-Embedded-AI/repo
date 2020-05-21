@@ -2,8 +2,6 @@
 
 # Vloeistofdetectie met VIS spectroscopie en embedded vision
 
-### Auteur: Eduardo L. Bemelmans
-
 ## Blokschema
 
 <p align="center"><img src="./Flowchart/flowchart-embeddedAI.png"></p>
@@ -28,3 +26,28 @@ De theorie van spectroscopie is [hier](./Spectroscopy/Theory/Spectroscopy.pdf) t
 | Breadboard          | 1 | Soldeerloos breadboard met 830 gaten -wit.            | EIC       | [link](https://www.gotron.be/meten-solderen/solderen/printplaten/breadboard/soldeerloos-breadboard-met-830-ronde-gaten-wit.html)          | 
 | Halogeenlamp        | 1 | G4 10W 12V halogeenlamp.                              | Radium    | [link](https://www.gotron.be/g4-socket-10w-12v-halo-lamp-d-10mm-l-33mm.html)            |  
 | Montagedraad set    | 1 | Montagedraad set met vaste kern, 10 m per kleur.      | Ohmeron   | [link](https://www.gotron.be/stijve-montagedraad-set-90m.html)       |  
+
+Voor een volledige beschrijving, [klik hier](./Spectroscopy/Implementation/log.md).
+
+## Installeren open MV IDE
+
+Open MV IDE is vereist om de open MV cam te programmeren. [Download hier](https://openmv.io/pages/download)
+
+## Hardware & software operation
+
+De bekomen spectroscoop moet worden aangesloten op een USB poort van de laptop. De halogeen lamp dient aangesloten te worden aan een 
+geschikte voeding tot 12 V en 10 W. 
+
+Het [spectral analysis python script](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/OpenMV/SpectralAnalysis.py) zorgt ervoor dat er snapshots van het spectrum genomen worden. De variabele Limit bepaald hoeveel spectra opgenomen worden door de H7 cam.
+
+```
+Limit = 10
+# er worden nu 10 snapshots genomen
+```
+De PC kan de histrogrammen ophalen van elk spectrum met de [JSON read code](https://github.com/PXL-Embedded-AI/repo/blob/master/Spectroscopy/OpenMV/jsonread.py).
+
+### Auteur: Eduardo L. Bemelmans
+
+
+
+
