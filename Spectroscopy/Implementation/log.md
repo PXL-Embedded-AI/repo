@@ -151,7 +151,7 @@ Extra verduisterende elementen zorgen voor minder reflectie binnen de doos. Een 
 
 ## Future work
 
-Op zoek gaan naar een permanente oplossing voor de lichtbron. Waarschijnlijk wordt dit een halogeen G4 lamp dat vast gemonteerd wordt aan de doos. De lamp kan ook gemonteerd worden op een statief. Het licht kan geleid worden via een optic fiber cale. Dit kan ook een interessant alternatief zijn, maar dit neemt meer ruimte in.
+Op zoek gaan naar een permanente oplossing voor de lichtbron. Waarschijnlijk wordt dit een halogeen G4 lamp dat vast gemonteerd wordt aan de doos. De lamp kan ook gemonteerd worden op een statief. Het licht kan geleid worden via een optic fiber cable. Dit kan ook een interessant alternatief zijn, maar dit neemt meer ruimte in.
 
 
 
