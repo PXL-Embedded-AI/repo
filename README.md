@@ -2,6 +2,13 @@
 
 # Vloeistofdetectie met VIS spectroscopie en embedded vision
 
+## Beknopte uitleg indeling github
+
+Op deze github pagina staan alle bestanden van Embed AI. Deze bestanden zijn geordend in mappen. Het ESP32 gedeelte bevindt zich in de [ESP32 firmware map](https://github.com/PXL-Embedded-AI/repo/tree/master/ESP32/firmware). De flowchart is terug te vinden in de [flowchart](https://github.com/PXL-Embedded-AI/repo/blob/master/Flowchart/flowchart-embeddedAI.png) map, etc. 
+
+De kern van het onderzoek is terug te vinden in de [Spectroscopy folder](https://github.com/PXL-Embedded-AI/repo/tree/master/Spectroscopy). Hierin staat alle info en staan alle bestanden omtrent de diffractieroosters, implementatie, software voor de openMV camera (van de spectroscoop), en de theorie van spectroscopie.
+
+
 ## Blokschema
 
 <p align="center"><img src="./Flowchart/flowchart-embeddedAI.png"></p>
